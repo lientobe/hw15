@@ -1,0 +1,79 @@
+@import "reset.css";
+
+body {
+    background-color: gray;
+}
+
+@keyframes witcher {
+    100% {
+        transform: rotate(6.28rad);
+    }
+}
+
+.witcher {
+    width: 25%;
+    position: absolute;
+    left: 15vw;
+    top: 30vh;
+    animation-name: witcher;
+    animation-duration: 20s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+@keyframes avengers {
+    0% {
+        transform: rotate(0rad) translateX(200px) rotate(0rad);
+    }
+
+    100% {
+        transform: rotate(6.28rad) translateX(200px) rotate(-6.28rad);
+    }
+}
+
+.avengers {
+    width: 15%;
+    position: absolute;
+    left: 65vw;
+    top: 35vh;
+    animation-name: avengers;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+@keyframes bitcoin {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(0) translateY(calc(100vh - 100px));
+
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 100px)) translateY(calc(100vh - 100px));
+    }
+
+    75% {
+        transform: translateX(calc(100vw - 100px)) translateY(0);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.bitcoin {
+    width: 100px;
+    animation-name: bitcoin;
+    animation-duration: 20s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
